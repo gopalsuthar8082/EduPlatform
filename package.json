@@ -1,0 +1,14 @@
+{
+  "name": "eduplatform",
+  "version": "1.0.0",
+  "description": "Digital Education & Exam Preparation Platform",
+  "scripts": {
+    "server": "node server/server.js",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
